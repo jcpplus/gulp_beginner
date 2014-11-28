@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+.mod-header {
+  background-color: $paimary-color;
+  .iphone-bar {
+    padding: 10px;
+    //text-align: center;
+    span {
+      display: inline-block;
+    }
+    span:nth-child(3) {
+      position: relative;
+      left: 37%;
+    }
+    span:last-child {
+      float: right;
+      font-size: 1.4em;
+    }
+  }
+}
+
+.weixin-header {
+  text-align: center;
+  padding: 10px;
+  span{
+    position: absolute;
+    right: 10px;
+    padding: 1px 6px;
+    display: inline-block;
+    float: right;
+    background-color: #444;
+    box-shadow: 0 0 1px #999;
+    cursor: pointer;
+  }
+}

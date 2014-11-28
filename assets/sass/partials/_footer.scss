@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.mod-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $height;
+  background: $paimary-color;
+  .mod-footer-links {
+    li{
+      @include span(2);
+      float: left;
+      @extend %textcenter;
+      cursor: pointer;
+      color: #666;
+      padding-top: 12px;
+      a {
+        display: inline-block;
+        width: 100%;
+        font-size: 40px;
+        text-decoration: none;
+      }
+      &:hover {
+        color: #fff;
+        span {
+          color: rgb(30, 137, 236);
+        }
+      }
+    }
+  }
+}

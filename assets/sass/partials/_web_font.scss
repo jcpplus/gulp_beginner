@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* FONT PATH
+ * -------------------------- */
+$fontFamily:        handCatch !default;
+$font-path:        "../fonts" !default;
+$font-version:          "3.0" !default;
+@font-face {
+  font-family: #{$fontFamily};
+  src: url('#{$font-path}/#{$fontFamily}.eot?v=#{$font-version}');
+  src: url('#{$font-path}/#{$fontFamily}.eot?#iefix&v=#{$font-version}') format('embedded-opentype'),
+  url('#{$font-path}/#{$fontFamily}.woff?v=#{$font-version}') format('woff'),
+  url('#{$font-path}/#{$fontFamily}.ttf?v=#{$font-version}') format('truetype'),
+  url('#{$font-path}/#{$fontFamily}.svg?v=#{$font-version}') format('svg');
+//src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
+}
+
+.szb-icon {
+  font-family: '#{$fontFamily}';
+  speak: none;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.szb-icon-users:before {
+  content: "\d604";
+}
+.szb-icon-user:before {
+  content: "\d603";
+}
+.szb-icon-compass:before {
+  content: "\d60a";
+}
+.szb-icon-comment:before {
+  content: "\d612";
+}
+.szb-icon-search:before {
+  content: "\d614";
+}
+.szb-icon-vcard:before {
+  content: "\d606";
+}
+.szb-icon-signal:before {
+  content: "\d635";
+}
+.szb-icon-brogress-1:before {
+  content: "\d624";
+}
+.szb-icon-plus3:before {
+  content: "\d64a";
+}
+.szb-icon-qq:before {
+  content: "\d6d5";
+}
