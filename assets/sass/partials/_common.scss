@@ -39,3 +39,11 @@ h1{margin: 0;}
   background: $second-color;
   position: relative;
 }
+
+a {
+     background : linear-gradient(to top, black, white);
+     display : flex
+}
+::placeholder {
+     color : #ccc
+}

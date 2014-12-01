@@ -31,7 +31,7 @@ gulp.task('styles', function() {
      })
 
     .pipe(sourcemaps.init({loadMaps: true}))
-    .pipe(autoprefixer({browsers: ['last 2 versions']}))
+    .pipe(autoprefixer({browsers: ['>1%', 'last 2 versions']}))
     .pipe(sourcemaps.write('./maps'))
 
     .pipe(gulp.dest('dist/styles'))
